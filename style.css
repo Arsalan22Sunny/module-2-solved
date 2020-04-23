@@ -1,0 +1,67 @@
+body{
+	text-align: center;
+	font-family: sans-serif;
+	margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 175%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p{
+	font-size: 125%;
+}
+
+section.box{
+	width: 31.5%;
+	background-color: gray;
+	padding: 5px;
+	margin: 8px;
+	border: 1px solid black;
+}
+
+section.box>h2{
+	float: right;
+	margin: 0px 0px 5px 5px;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+}
+
+section.box:nth-child(2)>h2{
+	background-color: yellow;
+}
+
+section.box:nth-child(3)>h2{
+	background-color: red;
+}
+
+section.box:nth-child(4)>h2{
+	background-color: green;
+}
+
+@media (min-width: 992px){
+	section{
+		float: left;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 767px){
+	section.box{
+		width: 47%;
+		float: left;
+	}
+	section.box:nth-child(4){
+		width: 96%;
+	}
+}
+
+@media (max-width: 766px){
+	
+	section.box{
+		width: 96%;
+	}
+}
